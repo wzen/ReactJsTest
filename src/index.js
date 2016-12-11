@@ -1,7 +1,8 @@
 import { createStore } from 'redux';
 import { addTodo, toggleTodo, setVisiblilityFilter } from '../actions/index';
+import { todoApp } from '../reducers/index.js';
 
-let store = createStore(() => {return 'Hello'});
+let store = createStore(todoApp);
 
 // TODO追加
 var addTodoElem = document.getElementById('addTodo');
