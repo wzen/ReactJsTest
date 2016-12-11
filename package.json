@@ -1,0 +1,39 @@
+{
+  "name": "reactjstest",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "build": "browserify controllers/*.js -t babelify --outfile public/javascripts/*.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "node-sass-middleware": "0.9.8",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "graceful-fs": "^4.1.11",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-util": "^3.0.7",
+    "minimatch": "^3.0.3",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  }
+}

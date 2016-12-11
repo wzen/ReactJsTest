@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  div#addTodo
+    form(onSubmit="")
+      input(type="text")
+      button(type="submit") Add Todo
+  ul#todoList
+    li First TODO
+    li(style="text-decoration: line-through") Second TODO
+    li Thrid TODO
+
+  p#links
+    | Show:
+    span All
+    |  ,
+    a(href="") Active
+    |  ,
+    a(href="") Completed
+
+  script(src="/javascripts/index.js", type="text/javascript")
