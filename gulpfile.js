@@ -14,19 +14,19 @@ var startWatchify = () => {
   const srcDir = './src';
 
   // コンパイル先ディレクトリ
-  const distDir = './dist';
+  const distDir = './public/javascripts';
 
   // コンパイル対象のファイル名
-  const sources = ['bundle1.js', 'bundle2.js'];
+  const sources = ['debug.js', 'index.js'];
   sources.forEach((entryPoint) => {
 
     // browserifyに渡すオプション群
     let browserifyOptions = {
       // コンパイル対象となるファイル
       entries: [srcDir + '/' + entryPoint],
-      // react, e2015, stage-2 プリセットを適用しつつ、babelifyを使って対象をコンパイルする。
+      // react, e2015, プリセットを適用しつつ、babelifyを使って対象をコンパイルする。
       // http://babeljs.io/docs/plugins/
-      transform: babelify.configure({presets: ["es2015", "react", "stage-2"]}),
+      transform: babelify.configure({presets: ["es2015", "react"]}),
       debug: true,
       //watchifyの差分ビルドを有効化
       cache: {},

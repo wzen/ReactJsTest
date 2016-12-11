@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "build": "browserify controllers/*.js -t babelify --outfile public/javascripts/*.js"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
