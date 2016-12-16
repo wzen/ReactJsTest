@@ -5,7 +5,7 @@ class Todo extends React.Component {
     return(
       <li
         onClick={this.props.onClick}
-        style={{ textDecoration: this.props.completed ? 'line-height' : 'none' }}
+        style={{ textDecoration: this.props.completed ? 'line-through' : 'none' }}
       >
         {this.props.text}
       </li>
@@ -15,7 +15,7 @@ class Todo extends React.Component {
 
 Todo.propType = {
   onClick: PropTypes.func.isRequired,
-  complated: PropTypes.bool.isRequired,
+  completed: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired
 };
 

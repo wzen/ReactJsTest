@@ -23,6 +23,7 @@ const todo = (state, action) => {
 
 // 複数処理
 const todos = (state = [], action) => {
+  console.log('call todos');
   switch(action.type) {
     case 'ADD_TODO':
       return [
@@ -38,6 +39,7 @@ const todos = (state = [], action) => {
 
 // TODO表示状態
 const visibilityFilter = (state = 'SHOW_ALL', action) => {
+  console.log('call visibilityFilter');
   switch(action.type) {
     case 'SET_VISIBILITY_FILTER':
       return action.filter;

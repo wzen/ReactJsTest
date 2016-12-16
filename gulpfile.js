@@ -17,7 +17,7 @@ var startWatchify = () => {
   const distDir = './public/javascripts';
 
   // コンパイル対象のファイル名
-  const sources = ['debug.js', 'index.js'];
+  const sources = ['index.js'];
   sources.forEach((entryPoint) => {
 
     // browserifyに渡すオプション群
